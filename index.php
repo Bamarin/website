@@ -17,7 +17,7 @@
     ?>
     <div class="container">
   <div class="parallax-container">
-    <div class="parallax"><img src="images/parallax1.jpg"></div>
+    <div class="parallax"><img src="img/bridge.jpg"></div>
       </div>
       <div class="section light-blue darken-1">
         <div class="row container">
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax2.jpg"></div>
+        <div class="parallax"><img src="img/space.jpg"></div>
       </div>
     </div>
     <?php
