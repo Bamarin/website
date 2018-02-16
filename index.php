@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
-  <body>
+  
   <body>
     <?php
       include 'navbar.php';
@@ -24,8 +24,8 @@
     <?php
       include 'footer.php';
     ?>
-    <div class="card-panel light-blue darken-1">This is a card panel with a teal lighten-2 class</div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
   </body>
 </html>
