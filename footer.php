@@ -27,4 +27,3 @@ echo '
 '
 ?>
 
-// vim: set filetype=eruby.html :

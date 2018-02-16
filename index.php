@@ -15,7 +15,12 @@
     <?php
       include 'navbar.php';
     ?>
-  
+    <div class="container">
+      <div class="row">
+        <div class= "col-sm-12">
+          <p>+++++++++++++++++++++++++++ROBA----------------------------</p>
+        </div>
+    </div>
     <?php
       include 'footer.php';
     ?>

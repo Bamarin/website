@@ -18,4 +18,3 @@ echo '
   </nav>'
 ?>
 
-// vim: set filetype=eruby.html :
