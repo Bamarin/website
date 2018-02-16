@@ -17,8 +17,8 @@
     ?>
     <div class="container">
       <div class="row">
-        <div class= "col-sm-12">
-          <p>+++++++++++++++++++++++++++ROBA----------------------------</p>
+        <div class= "col-xs-12">
+         CONTENUTO
         </div>
     </div>
     <?php
