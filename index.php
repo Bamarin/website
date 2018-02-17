@@ -15,7 +15,6 @@
     <?php
       include 'navbar.php';
     ?>
-    <div class="container">
   <div class="parallax-container">
     <div class="parallax"><img src="img/bridge.jpg"></div>
       </div>
@@ -28,7 +27,7 @@
       <div class="parallax-container">
         <div class="parallax"><img src="img/space.jpg"></div>
       </div>
-    </div>
+
     <?php
       include 'footer.php';
     ?>
