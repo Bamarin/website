@@ -5,4 +5,9 @@
  * Distributed under terms of the MIT license.
  */
 
-
+.img-circle {
+  border-radius: 50%;
+  max-height: 64px!important;
+  padding: 10px !important;
+  vertical-align: middle;
+}

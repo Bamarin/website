@@ -2,7 +2,10 @@
 echo '
   <nav>
     <div class="nav-wrapper light-blue darken-1">
-      <a href="index.php" class="brand-logo">Bamarin [IT]</a>
+      <a href="index.php" class="brand-logo">
+        <img class="img-circle" src="img/logo.png">
+        <span>Bamarin [IT]</span>
+      </a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="about.php">About</a></li>
