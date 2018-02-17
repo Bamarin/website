@@ -1,0 +1,12 @@
+{
+  "model1": {
+    "src": "img/bridge.jpg",
+    "desc": "Test modello 1",
+    "title": "Model 1"
+  },
+  "model2": {
+    "src": "img/space.jpg",
+    "desc": "Test modello 2",
+    "title": "Model 2"
+  }
+}
