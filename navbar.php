@@ -4,9 +4,8 @@ echo '
     <div class="nav-wrapper light-blue darken-1">
       <a href="index.php" class="brand-logo">
         <img class="img-circle" src="img/logo.png">
-        <span>Bamarin [IT]</span>
       </a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="index.php" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="about.php">About</a></li>
         <li><a href="models.php">Models</a></li>
