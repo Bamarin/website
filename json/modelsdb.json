@@ -8,5 +8,35 @@
     "src": "img/space.jpg",
     "desc": "Test modello 2",
     "title": "Model 2"
+  },
+  "model3": {
+    "src": "img/bridge.jpg",
+    "desc": "Test modello 1",
+    "title": "Model 1"
+  },
+  "model4": {
+    "src": "img/space.jpg",
+    "desc": "Test modello 2",
+    "title": "Model 2"
+  },
+  "model5": {
+    "src": "img/bridge.jpg",
+    "desc": "Test modello 1",
+    "title": "Model 1"
+  },
+  "model6": {
+    "src": "img/space.jpg",
+    "desc": "Test modello 2",
+    "title": "Model 2"
+  },
+  "model7": {
+    "src": "img/bridge.jpg",
+    "desc": "Test modello 1",
+    "title": "Model 12"
+  },
+  "model8": {
+    "src": "img/space.jpg",
+    "desc": "Test modello 2",
+    "title": "Model 5"
   }
 }

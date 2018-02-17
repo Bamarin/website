@@ -14,21 +14,25 @@
     <?php
       include 'navbar.php';
     ?>
-    <div>
+    <div class="row">
       <?php
         $file_json = file_get_contents("./json/modelsdb.json");
         $parsed_json = json_decode($file_json, TRUE);
+        $count = 0;
         foreach($parsed_json as $elem) {
           $img = $elem['src'];
           $desc = $elem['desc'];
           $title = $elem['title'];
+          if($count % 4  == 0) {
+            echo '</div>';
+            echo '<div class="row">';
+          }
           ?>
-          <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12 m3">
               <div class="card">
                 <div class="card-image">
                   <img src="<?php echo $img?>">
-                  <span class="card-title"><?php echo $title ?></span>
+                  <span class="card-title"><?php echo "$title" ?></span>
                   <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
                 </div>
                 <div class="card-content">
@@ -36,11 +40,12 @@
                 </div>
               </div>
             </div>
-          </div>
       <?php
+          $count++;
         }
       ?>
-    </div>
+      </div>
+
     <?php
       include 'footer.php';
     ?>
