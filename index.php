@@ -15,18 +15,18 @@
     <?php
       include 'navbar.php';
     ?>
-  <div class="parallax-container">
-    <div class="parallax"><img src="img/bridge.jpg"></div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/bridge.jpg"></div>
+    </div>
+    <div class="section light-blue darken-1">
+      <div class="row container">
+        <h2 class="header">Leonardo Marini</h2>
+        <p class="grey-text text-darken-3">TODO</p>
       </div>
-      <div class="section light-blue darken-1">
-        <div class="row container">
-          <h2 class="header">Leonardo Marini</h2>
-          <p class="grey-text text-darken-3 lighten-3">TODO</p>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="img/space.jpg"></div>
-      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/space.jpg"></div>
+    </div>
 
     <?php
       include 'footer.php';
