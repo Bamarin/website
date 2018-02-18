@@ -19,6 +19,12 @@
       <div class="row">
         <h2>Models</h2>
       </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus velit vitae vehicula hendrerit. Sed accumsan dui vel rhoncus porttitor. Sed ac magna non ex porta auctor. Sed quis nisl commodo neque posuere tempus eu in augue. Suspendisse fermentum nisi sed felis luctus, vitae consectetur nunc sollicitudin. Curabitur vestibulum nunc risus, id lobortis massa congue eu. Maecenas euismod posuere sapien at mattis. Sed augue mi, mollis vitae turpis id, consequat ornare est. Curabitur placerat justo a urna pellentesque dictum. Nunc imperdiet molestie condimentum.
+      </p>
+      
+
       <div class="row">
         <?php
           $file_json = file_get_contents("./json/modelsdb.json");
