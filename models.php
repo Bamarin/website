@@ -31,19 +31,25 @@
           $parsed_json = json_decode($file_json, TRUE);
           foreach($parsed_json as $elem) {
             $img = $elem['src'];
-            $desc = $elem['desc'];
+            $tags = $elem['tags'];
             $title = $elem['title'];
             ?>
               <div class="col s12 m4">
-                <div class="card">
+                <div class="card hoverable">
                   <div class="card-image">
                     <img src="<?php echo $img?>">
                     <span class="card-title"><?php echo "$title" ?></span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
                   </div>
-                  <div class="card-content">
-                    <p><?php echo $desc ?></p>
-                  </div>
+		  <?php
+		    foreach($tags as $tag) {
+		    ?>
+		  <div class="chip">
+		    <?php echo "$tag" ?>
+		  </div>
+		  <?php
+	 	    }
+	 	  ?>
                 </div>
               </div>
         <?php

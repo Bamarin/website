@@ -1,42 +1,64 @@
 {
   "model1": {
     "src": "img/bridge.jpg",
-    "desc": "Test modello 1",
+    "tags": {
+      "tag1": "such",
+      "tag2": "wow"
+    },
     "title": "Model 1"
   },
   "model2": {
     "src": "img/space.jpg",
-    "desc": "Test modello 2",
+    "tags": {
+      "tag1": "amazing"
+    },
     "title": "Model 2"
   },
   "model3": {
     "src": "img/bridge.jpg",
-    "desc": "Test modello 1",
-    "title": "Model 1"
+    "tags": {
+      "tag1": "such",
+      "tag2": "wow"
+    },
+    "title": "Model 3"
   },
   "model4": {
     "src": "img/space.jpg",
-    "desc": "Test modello 2",
-    "title": "Model 2"
+    "tags": {
+      "tag1": "such",
+      "tag2": "wow"
+    },
+    "title": "Model 4"
   },
   "model5": {
     "src": "img/bridge.jpg",
-    "desc": "Test modello 1",
-    "title": "Model 1"
+    "tags": {
+      "tag1": "such",
+      "tag2": "wow"
+    },
+    "title": "Model 5"
   },
   "model6": {
     "src": "img/space.jpg",
-    "desc": "Test modello 2",
-    "title": "Model 2"
+    "tags": {
+      "tag1": "such"
+    },
+    "title": "Model 6"
   },
   "model7": {
     "src": "img/bridge.jpg",
-    "desc": "Test modello 1",
-    "title": "Model 12"
+    "tags": {
+      "tag2": "wow"
+    },
+    "title": "Model 7"
   },
   "model8": {
     "src": "img/space.jpg",
-    "desc": "Test modello 2",
-    "title": "Model 5"
+    "tags": {
+      "tag1": "such",
+      "tag2": "amazing",
+      "tag3": "wow"
+    },
+    "title": "Model 8"
   }
 }
