@@ -21,7 +21,7 @@
       </div>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus velit vitae vehicula hendrerit. Sed accumsan dui vel rhoncus porttitor. Sed ac magna non ex porta auctor. Sed quis nisl commodo neque posuere tempus eu in augue. Suspendisse fermentum nisi sed felis luctus, vitae consectetur nunc sollicitudin. Curabitur vestibulum nunc risus, id lobortis massa congue eu. Maecenas euismod posuere sapien at mattis. Sed augue mi, mollis vitae turpis id, consequat ornare est. Curabitur placerat justo a urna pellentesque dictum. Nunc imperdiet molestie condimentum.
+        Here are some of the models I have done that you can download. They don't have a fixed prize, so fell free to donate the amount you think I deserve.
       </p>
       
 
