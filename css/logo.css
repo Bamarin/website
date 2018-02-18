@@ -10,4 +10,5 @@
   max-height: 64px!important;
   padding: 10px !important;
   vertical-align: middle;
+  display: inline-block;
 }
