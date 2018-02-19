@@ -1,6 +1,3 @@
-<?php
-  session_start();
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,7 +17,7 @@
     ?>
     <div class="container">
       <div class="row">
-        <h2>Models</h2>
+        <h2>Model Detail</h2>
       </div>
 
       <p>
@@ -28,7 +25,7 @@
       </p>
       
 
-      <div class="row">
+      <!--div class="row">
         <?php
           $file_json = file_get_contents("./json/modelsdb.json");
           $parsed_json = json_decode($file_json, TRUE);
@@ -39,11 +36,11 @@
             ?>
               <div class="col s12 m4">
                 <div class="card hoverable">
-                  <a class="card-image" href="model-detail.php">
+                  <div class="card-image">
                     <img src="<?php echo $img?>">
                     <span class="card-title"><?php echo "$title" ?></span>
                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
-                  </a>
+                  </div>
 		  <div class="card-content">
 		  <?php
 		    foreach($tags as $tag) {
@@ -60,7 +57,7 @@
         <?php
           }
         ?>
-      </div>
+      </div--!>
     </div>
 
     <?php
@@ -71,14 +68,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".card").click(function(){
-          $(this).hide();
-        });
-      });
-    </script>
   </body>
 </html>
+
 <!-- vim: set filetype=eruby.html : -->
