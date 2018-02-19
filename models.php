@@ -41,15 +41,17 @@
                     <span class="card-title"><?php echo "$title" ?></span>
                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
                   </div>
+		  <div class="card-content">
 		  <?php
 		    foreach($tags as $tag) {
 		    ?>
-		  <div class="chip">
-		    <?php echo "$tag" ?>
-		  </div>
+		    <div class="chip">
+		      <?php echo "$tag" ?>
+		    </div>
 		  <?php
 	 	    }
 	 	  ?>
+		  </div>
                 </div>
               </div>
         <?php
