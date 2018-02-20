@@ -24,7 +24,7 @@
     <div class="valign-wrapper row">
       <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
         <h3 class="center">Admin panel</h3>
-        <form id="form-admin" role="form" class="login-form" method="post" action="login.php">
+        <form id="form-admin" role="form" class="login-form" method="post" action="login.php" onsubmit="return ">
           <div class="card-content">
             <span class="card-title">Login</span>
             <div class="row">
@@ -40,7 +40,9 @@
           </div>
           <div class="card-action right-align">
             <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
-            <input type="submit" class="btn blue waves-effect waves-light" value="Login">
+            <button type="submit" class="btn blue waves-effect waves-light" value="Login">
+              Login
+            </button>
           </div>
         </form>
       </div>

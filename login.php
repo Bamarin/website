@@ -35,7 +35,7 @@ foreach($parsed_json as $elem) {
 }
 
 if($_SESSION["logged"] == true) {
-  header("location:prova.php");
+  header("location:models-manager.php");
 } else {
   header("location:admin.php");
 }
