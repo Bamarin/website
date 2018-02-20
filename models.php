@@ -39,11 +39,11 @@
             ?>
               <div class="col s12 m4">
                 <div class="card hoverable">
-                  <a class="card-image" href="model-detail.php">
+                  <div class="card-image" href="model-detail.php">
                     <img src="<?php echo $img?>">
                     <span class="card-title"><?php echo "$title" ?></span>
                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
-                  </a>
+                  </div>
 		  <div class="card-content">
 		  <?php
 		    foreach($tags as $tag) {
