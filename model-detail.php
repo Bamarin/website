@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,7 +20,9 @@
     ?>
     <div class="container">
       <div class="row">
-        <h2>Model Detail</h2>
+        <?php	
+        echo "<h2>" . $_SESSION["model"] . "</h2>"
+	?>
       </div>
 
       <p>

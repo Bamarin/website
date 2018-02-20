@@ -27,7 +27,7 @@
         Here are some of the models I have done that you can download. They don't have a fixed prize, so fell free to donate the amount you think I deserve.
       </p>
       
-
+      <!--Grid with all the models loaded from json--!>
       <div class="row">
         <?php
           $file_json = file_get_contents("./json/modelsdb.json");
@@ -39,7 +39,8 @@
             ?>
               <div class="col s12 m4">
                 <div class="card hoverable">
-                  <div class="card-image" href="model-detail.php">
+                  <div class="card-image">
+		  <!--TODO change the static link below into a page which is dynamically loaded with model-specific content--!>
 		    <a href="model-detail.php">
                     <img src="<?php echo $img?>">
                     <span class="card-title"><?php echo "$title" ?></span>
@@ -67,11 +68,24 @@
     <?php
       include 'footer.php';
     ?>
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
+    <!--SCRIPT TO DINAMICALLY INSTANTIATE THE DETAIL PAGE OF EACH MODEL (yet to be implemented)--!>
+    <!--script type="tetx/javascript" src="js/model.js"></script--!>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".card-image").click(function(){
+          <?php
+		$_SESSION["model"] = "Model X" ;
+	  ?>
+        });
+      });
+    </script>
   </body>
 </html>
 <!-- vim: set filetype=eruby.html : -->
