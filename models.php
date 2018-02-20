@@ -45,7 +45,7 @@
                     <span class="card-title"><?php echo "$title" ?></span>
                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
                   </div>
-		  <div class="card-content">
+		  <div class="card-content truncate">
 		  <?php
 		    foreach($tags as $tag) {
 		    ?>
