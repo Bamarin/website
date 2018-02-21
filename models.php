@@ -7,7 +7,6 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/logo.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/cards-container.css"  media="screen,projection"/>
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -19,118 +18,11 @@
     <div class="container">
       <div class="row">
         <h2>Models</h2>
-
         <p>
           Here are some of the models I have done that you can download. They don't have a fixed price, so feel free to donate the amount you think I deserve.
         </p>
-
-    <div class="col s1 cards-container">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-               I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-        </div>
-          <div class="col s1 cards-container">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div></div>
-
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-               I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-               I am convenient because I require little markup to use effectively.</p>
-            <p>This card has some extra info, which will make it taller. This is OK because we're using CSS columns!!!</p>
-	</div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-	  <p>I am a very simple card. I am good at containing small bits of information.</p>
-	</div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-
-        <!--Grid with all the models loaded from json--!>
-        <!--
-        <div class="col s12 m4 cards-container">
+          <div class="col s12 cards-container">
+        <!--Grid with all the models loaded from json-->
           <?php
             $file_json = file_get_contents("./json/modelsdb.json");
             $parsed_json = json_decode($file_json, TRUE);
@@ -139,6 +31,7 @@
               $tags = $elem['tags'];
               $title = $elem['title'];
               ?>
+
               <div class="card hoverable">
                 <div class="card-image">
                   <?php
@@ -148,7 +41,7 @@
                   <span class="card-title"><?php echo "$title" ?></span>
                   <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
                 </div>
-                <div class="card-content truncate">
+                <div class="card-content">
                   <?php
                     foreach($tags as $tag) {
                     ?>
@@ -163,13 +56,9 @@
             <?php
             }
           ?>
-	</div>
-	-->
-
-
-      </div>
     </div>
-
+    </div>
+    </div>
     <?php
       include 'footer.php';
     ?>
