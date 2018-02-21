@@ -34,7 +34,12 @@
     "src": "img/bridge.jpg",
     "tags": {
       "tag1": "such",
-      "tag2": "wow"
+      "tag2": "wow",
+      "tag3": "wow",
+      "tag4": "such",
+      "tag5": "amazing",
+      "tag6": "wow",
+      "tag7": "amazing"
     },
     "title": "Model 5"
   },
@@ -57,7 +62,10 @@
     "tags": {
       "tag1": "such",
       "tag2": "amazing",
-      "tag3": "wow"
+      "tag3": "wow",
+      "tag4": "such",
+      "tag5": "amazing",
+      "tag6": "wow"
     },
     "title": "Model 8"
   }

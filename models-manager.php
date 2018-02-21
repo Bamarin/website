@@ -20,49 +20,49 @@
     ?>
     <div class="container">
       <div class="row">
-        <h2>Models</h2>
+        <h2>Add new model</h2>
       </div>
-
-      <p>
-        Here are some of the models I have done that you can download. They don't have a fixed price, so feel free to donate the amount you think I deserve.
-      </p>
-      
-      <!--Grid with all the models loaded from json--!>
-      <div class="row">
-        <?php
-          $file_json = file_get_contents("./json/modelsdb.json");
-          $parsed_json = json_decode($file_json, TRUE);
-          foreach($parsed_json as $elem) {
-            $img = $elem['src'];
-            $tags = $elem['tags'];
-            $title = $elem['title'];
-            ?>
-              <div class="col s12 m4">
-                <div class="card hoverable">
-                  <div class="card-image">
-		  <!--TODO change the static link below into a page which is dynamically loaded with model-specific content--!>
-		    <a href="model-detail.php">
-                    <img src="<?php echo $img?>">
-                    <span class="card-title"><?php echo "$title" ?></span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
-                  </div>
-		  <div class="card-content truncate">
-		  <?php
-		    foreach($tags as $tag) {
-		    ?>
-		    <div class="chip">
-		      <?php echo "$tag" ?>
-		    </div>
-		  <?php
-	 	    }
-	 	  ?>
-		  </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                <label for="disabled">Disabled</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                This is an inline input field:
+                <div class="input-field inline">
+                  <input id="email" type="email" class="validate">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
                 </div>
               </div>
-        <?php
-          }
-        ?>
-      </div>
+            </div>
+          </form>
+   </div>
     </div>
 
     <?php
