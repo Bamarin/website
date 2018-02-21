@@ -41,7 +41,9 @@
                 <div class="card hoverable">
                   <div class="card-image">
 		  <!--TODO change the static link below into a page which is dynamically loaded with model-specific content--!>
-		    <a href="model-detail.php">
+	          <?php
+	            echo "<a href='model-detail.php?model=" . $title . "'>"
+		  ?>
                     <img src="<?php echo $img?>">
                     <span class="card-title"><?php echo "$title" ?></span>
                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
@@ -74,18 +76,6 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
-    <!--SCRIPT TO DINAMICALLY INSTANTIATE THE DETAIL PAGE OF EACH MODEL (yet to be implemented)--!>
-    <!--script type="tetx/javascript" src="js/model.js"></script--!>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".card-image").click(function(){
-          <?php
-		$_SESSION["model"] = "Model X" ;
-	  ?>
-        });
-      });
-    </script>
   </body>
 </html>
 <!-- vim: set filetype=eruby.html : -->

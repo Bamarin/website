@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row">
         <?php	
-        echo "<h2>" . $_SESSION["model"] . "</h2>"
+	   echo "<h2>" . $_GET["model"] . " </h2>"
 	?>
       </div>
 
