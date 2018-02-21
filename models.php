@@ -24,7 +24,7 @@
       </div>
 
       <p>
-        Here are some of the models I have done that you can download. They don't have a fixed prize, so fell free to donate the amount you think I deserve.
+        Here are some of the models I have done that you can download. They don't have a fixed price, so feel free to donate the amount you think I deserve.
       </p>
       
       <!--Grid with all the models loaded from json--!>
