@@ -28,41 +28,47 @@
           <div class="row">
             <form class="col s12">
               <div class="row">
+                <!-- Model's title -->
                 <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
+                  <input placeholder="Title" id="modelstitle" type="text" class="validate">
+                  <label for="modelstitle">Model's title</label>
                 </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                  <label for="disabled">Disabled</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="password" type="password" class="validate">
-                  <label for="password">Password</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12">
-                  This is an inline input field:
-                  <div class="input-field inline">
-                    <input id="email" type="email" class="validate">
-                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                <!-- Text area -->
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="description" class="materialize-textarea"></textarea>
+                    <label for="description">Model's description</label>
                   </div>
                 </div>
+                <!-- File input -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>File</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload model's image">
+                  </div>
+                </div>
+                <!-- File input -->
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>File</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Model's STL">
+                  </div>
+                </div>
+                  <div class="input-field col s6">
+                    <input id="modeltags" type="text" class="validate">
+                    <label for="modeltags">Model's TAGS</label>
+                  </div>
+                <br>
+                <!-- Load anythings -->
+              </div>
+              <div class="right row">
+                <a class="waves-effect waves-light btn">Load module</a>
               </div>
             </form>
      </div>
