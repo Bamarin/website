@@ -24,7 +24,7 @@
     <div class="valign-wrapper row">
       <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
         <h3 class="center">Admin panel</h3>
-        <form id="form-admin" role="form" class="login-form" method="post" action="login.php" onsubmit="return ">
+        <form id="form-admin" role="form" class="login-form" method="post" action="login.php">
           <div class="card-content">
             <span class="card-title">Login</span>
             <div class="row">
@@ -68,19 +68,19 @@
             $(element).closest("form").find("label[for='" + element.attr("id") + "']").attr('data-error', error.text());
           },
             rules: {
-              username: {
+              modelstitle: {
                 required: true
               },
-              password: {
+              description: {
                 required: true,
                 minlength: 6
               }
             },
             messages: {
-              username:{
+              modelstitle:{
                   required: "Enter a username",
               },
-              password:{
+              description:{
                   required: "Enter a password",
               }
             }

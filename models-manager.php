@@ -29,25 +29,25 @@
           <div class="col s12">
             <div class="card-panel">
               <div class="row">
-                <form class="col s12">
+                <form class="col s12" role="form" id="model-form" method="post" action="write-model.php">
                   <div class="row">
                     <!-- Model's title -->
                     <div class="input-field col s6">
-                      <input placeholder="Title" id="modelstitle" type="text" class="validate">
-                      <label for="modelstitle">Model's title</label>
+                      <input placeholder="Title" name="modelstitle" id="modelstitle" type="text" class="validate">
+                      <label required="required" aria-required="true" for="modelstitle">Model's title</label>
                     </div>
                     <!-- Text area -->
                     <div class="row">
                       <div class="input-field col s12">
-                        <textarea id="description" class="materialize-textarea"></textarea>
-                        <label for="description">Model's description</label>
+                        <textarea id="description" name="description" class="materialize-textarea validate"></textarea>
+                        <label for="description" required="required" aria-required="true">Model's description</label>
                       </div>
                     </div>
                     <!-- File input -->
                     <div class="file-field input-field">
                       <div class="btn blue">
                         <span>File</span>
-                        <input type="file">
+                        <input type="file" name="photo-model" id="photo-model" class="validate">
                       </div>
                       <div class="file-path-wrapper">
                         <input class="file-path validate" type="text" placeholder="Upload model's image">
@@ -71,7 +71,7 @@
                     <!-- Load anythings -->
                   </div>
                   <div class="right row">
-                    <a class="waves-effect waves-light btn blue">Load module</a>
+                    <button type="submit" class="waves-effect waves-light btn blue">Load module</button>
                   </div>
                 </form>
               </div>
@@ -88,19 +88,38 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/navbar.js"></script>
-      <script type="text/javascript" src="js/parallax.js"></script>
-      <!--SCRIPT TO DINAMICALLY INSTANTIATE THE DETAIL PAGE OF EACH MODEL (yet to be implemented)--!>
-      <!--script type="tetx/javascript" src="js/model.js"></script--!>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery-validate.min.js"></script>
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
       <script>
-        $(document).ready(function(){
-          $(".card-image").click(function(){
-            <?php
-  		$_SESSION["model"] = "Model X" ;
-  	  ?>
-          });
-        });
+        $( document ).ready( function () {
+          $("#model-form").validate( {
+            errorClass: 'invalid',
+            errorPlacement: function(error, element) {
+              $(element).closest("form").find("label[for='" + element.attr("id") + "']").attr('data-error', error.text());
+            },
+              rules: {
+                modelstitle: {
+                  required: true
+                },
+                description: {
+                  required: true
+                },
+                photo-model: {
+                  required: true
+                }
+              },
+              messages: {
+                modelstitle:{
+                    required: "Enter a name",
+                },
+                description:{
+                    required: "Enter a description",
+                }
+              }
+          } );
+        } );
       </script>
+
     </body>
   </html>
 
