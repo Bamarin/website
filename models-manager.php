@@ -23,55 +23,61 @@
       ?>
       <div class="container">
         <div class="row">
-          <h2>Add new model</h2>
+          <h2 class="center">Add new model</h2>
         </div>
-          <div class="row">
-            <form class="col s12">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
               <div class="row">
-                <!-- Model's title -->
-                <div class="input-field col s6">
-                  <input placeholder="Title" id="modelstitle" type="text" class="validate">
-                  <label for="modelstitle">Model's title</label>
-                </div>
-                <!-- Text area -->
-                <div class="row">
-                  <div class="input-field col s12">
-                    <textarea id="description" class="materialize-textarea"></textarea>
-                    <label for="description">Model's description</label>
+                <form class="col s12">
+                  <div class="row">
+                    <!-- Model's title -->
+                    <div class="input-field col s6">
+                      <input placeholder="Title" id="modelstitle" type="text" class="validate">
+                      <label for="modelstitle">Model's title</label>
+                    </div>
+                    <!-- Text area -->
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="description" class="materialize-textarea"></textarea>
+                        <label for="description">Model's description</label>
+                      </div>
+                    </div>
+                    <!-- File input -->
+                    <div class="file-field input-field">
+                      <div class="btn blue">
+                        <span>File</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload model's image">
+                      </div>
+                    </div>
+                    <!-- File input -->
+                    <div class="file-field input-field">
+                      <div class="btn blue">
+                        <span>File</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Model's STL">
+                      </div>
+                    </div>
+                      <div class="input-field col s6">
+                        <input id="modeltags" type="text" class="validate">
+                        <label for="modeltags">Model's TAGS</label>
+                      </div>
+                    <br>
+                    <!-- Load anythings -->
                   </div>
-                </div>
-                <!-- File input -->
-                <div class="file-field input-field">
-                  <div class="btn blue">
-                    <span>File</span>
-                    <input type="file">
+                  <div class="right row">
+                    <a class="waves-effect waves-light btn blue">Load module</a>
                   </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload model's image">
-                  </div>
-                </div>
-                <!-- File input -->
-                <div class="file-field input-field">
-                  <div class="btn blue">
-                    <span>File</span>
-                    <input type="file">
-                  </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Model's STL">
-                  </div>
-                </div>
-                  <div class="input-field col s6">
-                    <input id="modeltags" type="text" class="validate">
-                    <label for="modeltags">Model's TAGS</label>
-                  </div>
-                <br>
-                <!-- Load anythings -->
+                </form>
               </div>
-              <div class="right row">
-                <a class="waves-effect waves-light btn blue">Load module</a>
-              </div>
-            </form>
-     </div>
+            </div>
+          </div>
+        </div>
       </div>
   
       <?php
