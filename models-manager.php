@@ -42,7 +42,7 @@
                 </div>
                 <!-- File input -->
                 <div class="file-field input-field">
-                  <div class="btn">
+                  <div class="btn blue">
                     <span>File</span>
                     <input type="file">
                   </div>
@@ -52,7 +52,7 @@
                 </div>
                 <!-- File input -->
                 <div class="file-field input-field">
-                  <div class="btn">
+                  <div class="btn blue">
                     <span>File</span>
                     <input type="file">
                   </div>
@@ -68,7 +68,7 @@
                 <!-- Load anythings -->
               </div>
               <div class="right row">
-                <a class="waves-effect waves-light btn">Load module</a>
+                <a class="waves-effect waves-light btn blue">Load module</a>
               </div>
             </form>
      </div>
