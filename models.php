@@ -21,7 +21,7 @@
         <p>
           Here are some of the models I have done that you can download. They don't have a fixed price, so feel free to donate the amount you think I deserve.
         </p>
-          <div class="col s12 cards-container">
+        <div class="col s12 cards-container">
         <!--Grid with all the models loaded from json-->
           <?php
             $file_json = file_get_contents("./json/modelsdb.json");
@@ -56,8 +56,8 @@
             <?php
             }
           ?>
-    </div>
-    </div>
+        </div>
+      </div>
     </div>
     <?php
       include 'footer.php';
