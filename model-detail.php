@@ -16,7 +16,7 @@
       include 'navbar.php';
     ?>
     <div class="container">
-      <div class="row">
+      <div class="row" id="main">
 	<!--TODO catch exception when the page is loaded without passing any argument-->
         <?php	
 	   echo "<h2>" . $_GET["model"] . " </h2>"
@@ -28,6 +28,7 @@
       </p>
       
     </div>
+    
 
     <?php
       include 'footer.php';

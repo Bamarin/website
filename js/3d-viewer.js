@@ -13,7 +13,8 @@ animate();
 function init() {
 
     container = document.createElement('div');
-    document.body.appendChild(container);
+    document.getElementById("main").appendChild(container);
+    container.setAttribute("class", "col s12")
 
     /* Camera */
 
