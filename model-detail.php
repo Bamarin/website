@@ -1,6 +1,3 @@
-<?php
-  session_start();
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,49 +17,16 @@
     ?>
     <div class="container">
       <div class="row">
+	<!--TODO catch exception when the page is loaded without passing any argument-->
         <?php	
 	   echo "<h2>" . $_GET["model"] . " </h2>"
 	?>
       </div>
 
-      <p>
+      <p id="desc">
         Here are some of the models I have done that you can download. They don't have a fixed prize, so fell free to donate the amount you think I deserve.
       </p>
       
-
-      <!--div class="row">
-        <?php
-          $file_json = file_get_contents("./json/modelsdb.json");
-          $parsed_json = json_decode($file_json, TRUE);
-          foreach($parsed_json as $elem) {
-            $img = $elem['src'];
-            $tags = $elem['tags'];
-            $title = $elem['title'];
-            ?>
-              <div class="col s12 m4">
-                <div class="card hoverable">
-                  <div class="card-image">
-                    <img src="<?php echo $img?>">
-                    <span class="card-title"><?php echo "$title" ?></span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
-                  </div>
-		  <div class="card-content">
-		  <?php
-		    foreach($tags as $tag) {
-		    ?>
-		    <div class="chip">
-		      <?php echo "$tag" ?>
-		    </div>
-		  <?php
-	 	    }
-	 	  ?>
-		  </div>
-                </div>
-              </div>
-        <?php
-          }
-        ?>
-      </div--!>
     </div>
 
     <?php
@@ -73,6 +37,12 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/Detector.js"></script>
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+    <script type="text/javascript" src="js/OBJLoader.js"></script>
+    <script type="text/javascript" src="js/MTLLoader.js"></script>
+    <script type="text/javascript" src="js/3d-viewer.js"></script>
   </body>
 </html>
 
