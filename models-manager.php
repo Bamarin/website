@@ -103,9 +103,6 @@
                 },
                 description: {
                   required: true
-                },
-                photo-model: {
-                  required: true
                 }
               },
               messages: {

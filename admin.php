@@ -68,7 +68,7 @@
             $(element).closest("form").find("label[for='" + element.attr("id") + "']").attr('data-error', error.text());
           },
             rules: {
-              modelstitle: {
+              username: {
                 required: true
               },
               description: {
@@ -77,10 +77,10 @@
               }
             },
             messages: {
-              modelstitle:{
+              username:{
                   required: "Enter a username",
               },
-              description:{
+              password:{
                   required: "Enter a password",
               }
             }
