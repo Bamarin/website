@@ -15,20 +15,19 @@
     <?php
       include 'navbar.php';
     ?>
+
     <div class="container">
       <div class="row" id="main">
-	<!--TODO catch exception when the page is loaded without passing any argument-->
-        <?php	
-	   echo "<h2>" . $_GET["model"] . " </h2>"
-	?>
+      <!--TODO catch exception when the page is loaded without passing any argument-->
+      <?php	
+	      echo "<h2>" . $_GET["model"] . " </h2>"
+	    ?>
       </div>
 
       <p id="desc">
         Here are some of the models I have done that you can download. They don't have a fixed prize, so fell free to donate the amount you think I deserve.
       </p>
-      
     </div>
-    
 
     <?php
       include 'footer.php';
@@ -46,5 +45,6 @@
     <script type="text/javascript" src="js/3d-viewer.js"></script>
   </body>
 </html>
+
 
 <!-- vim: set filetype=eruby.html : -->
